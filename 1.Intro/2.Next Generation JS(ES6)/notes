@@ -1,0 +1,164 @@
+1. let & const
+
+    let : varible values
+
+    const: constant values.
+
+    Both are same like var.
+
+    ex:
+
+    var name ="Raj";
+    console.log(name); //prints the name Raj
+
+        name="Max"
+        console.log(name); //prints the name Max.
+
+
+    let name ="Raj";
+        console.log(name); //prints the name Raj
+
+        name="Max"
+        console.log(name); //prints the name Max.
+
+
+        const name ="Raj";
+        console.log(name); //prints the name Raj
+
+    name="Max"
+        console.log(name); // gives an error.
+
+
+ 2. Arrow functions
+
+   normal Javascript function:
+
+      function myFuntion(){
+
+      }   
+
+    Arrow function:
+
+      const myFunc = () => {
+
+      }      
+
+      no more issues with "this" keyword
+
+
+      ex:
+
+       fucntion print(name){
+            console.log(name);
+       }
+
+        print('Raj');
+
+
+       const print = (name)  => {
+           console.log(name);
+       }
+
+       print('Raj');
+
+3 . Export sand Imports (Modules)
+
+    writing modular code. split code over mutiple js files
+
+
+  ex:
+    
+
+    person.js 
+    ---------------
+
+        const person = {
+            name: 'Max'
+        }
+
+      export default person    // deafult is a keyword which marks this file is default export of this file
+
+    utility.js 
+    ------------
+      
+
+      export const clean = () => { }
+
+      export const baseData = 10;  // multiple exports in a single file
+
+
+      app.js
+      ---------------
+
+      import person from './person.js'
+      import prs from './person.js'  // here we can use any name (person, prs) because person.js export as default
+
+      import {clean} from './utility.js'
+      import {baseData} from './utility.js'  // named imports
+      //but here we need to use exact same names presnt in the utility.js because this file doesnot have deafault export
+
+
+4. classes
+   
+     are blueprints for js objects
+
+
+     class Person{
+
+           //properties
+
+           let name = "Raj";
+
+           //methods
+
+          call =  () => {  }
+     }
+
+     //instantiation of class
+
+     const personClass = new Person();
+
+      console.log(personClass.name);
+
+      personClass.call();
+
+
+      inheritance
+
+
+      class A extends B
+
+
+
+   class Human {
+
+            constructor(){
+                this.gender = "Male";
+            } 
+
+            printGender(){
+                console.log(this.gender);
+            }
+      }
+
+     const human = new Human();
+     human.printGender();
+
+      class Person extends Human {
+
+            constructor(){
+                super();
+                this.name = "Raj";
+            } //default constructor which is executed when object is created with new keyword
+
+            printName(){
+                console.log(this.name);
+            }
+      }
+
+
+      const person = new Person();
+      person.printName();
+      person.printGender();
+
+  
