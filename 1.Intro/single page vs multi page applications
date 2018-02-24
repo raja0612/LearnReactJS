@@ -1,0 +1,22 @@
+We can create two kinds of application with React.
+
+1. Single Page Application.
+
+  In SPA, user will get single HTML page from server when user first visits the website. There after everything
+  is managed with Javascript with React. Entire page consists of components which are rendered and handled by Javascript.
+
+  Content rendered on Client.
+
+  In SPA , typically we have only one RenderDOM.render() call. and root app component is mounted to DOM which
+  holds other react components.
+
+
+2. Multi Page Application.
+
+  In Multi Page Application, user will get multiple pages from Server.Each page has content for given route(URL)
+  We mgiht use React but only to create little widgets which are individually contained components that we
+  dumped into main page but not entire page is managed by React.
+
+  Content rendered on Server.
+
+    In Multi Page Application ,  we have  multiple RenderDOM.render() calls per each widget.

@@ -1,0 +1,11 @@
+1. UI state becoms difficult to hadle with Vanila JS.
+
+2. Focus on business logic, not preventing your app from exploding,plus
+framework coders probably write better code.
+
+3.  Huge Ecosytem, Active Community,High Performance
+
+
+
+React concentrate on business login not on technical side. means what user sees on website.
+Jquery 
