@@ -1,0 +1,29 @@
+React JS is a javascript library for building User Interfaces.
+
+React is component based framework.
+
+Component is a reusbale code.
+
+React uses two libraries.
+
+1. React JS for developing Components
+
+2. ReactDOM : for rendering react Components on real DOM.
+
+ReactDOM is an object which contains render() method which is used to render a javscript function
+as a component to real DOM.
+
+syntax:
+
+ ReactDOM.render(
+     <react function as tag />,
+     document.querySelector('#id');
+ )
+
+ React mostly uses next generation javascript syntax (features). So It uses Babel compiler for compiling next 
+ generation JS code and runs on browser.
+
+
+
+ React component function has props as a argument which reads the values dynamically 
+ from ReactDOM.render() method.

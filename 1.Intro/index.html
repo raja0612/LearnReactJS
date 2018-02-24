@@ -1,0 +1,37 @@
+
+HTML code.
+
+<div id="p1"></div>
+<div id="p2"></div>
+
+
+CSS code :
+
+.person {
+    display: inline-block;
+    border: 1px solid #eee;
+    box-shadow 0 2px 2px #ccc;
+    width: 200px;
+    padding: 20px;
+  }
+
+
+
+  JS Code :
+  function Person(props) {
+    
+     return (
+      <div className='person'>
+        <h1>Your Name: {props.name}</h1>
+         <p>Your Age: {props.age}</p>
+       </div>
+     );
+  }
+  
+  ReactDOM.render(<Person name="Raj"         age="27"/>,
+                  document.querySelector('#p1'));
+  
+  ReactDOM.render(<Person name="Max"         age="2"/>,
+                  document.querySelector('#p2'));
+  
+
