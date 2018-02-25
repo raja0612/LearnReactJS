@@ -247,3 +247,13 @@ console.log(newPerson); //{name:"Max"} eventhough we changde the person property
       
 
 8. Refreshing Array fuctions.  
+
+var numbers = [1,2,3];
+
+var doubleNumbers = numbers.map((num)=>{
+    return num*2;
+
+})
+
+console.log(numbers);
+console.log(doubleNumbers;)
