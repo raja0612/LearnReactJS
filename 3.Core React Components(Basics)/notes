@@ -1,0 +1,23 @@
+Using a Build Workflow.
+
+We need a complex workflow to create React app because
+
+1. Optimize Code
+2. Use Next-Gen JavaScript Features.
+3. Be More Productive
+4. Use Dependency Management Tools like npm or yarn
+5. Use Bundler .Recommended: Webpack
+6. Use Compiler (Next-Gen JavaScript Features)
+    Babel+Presets
+7. Use a Development Server
+
+
+To create React app.
+
+1. Install Nodejs
+2. npm install -g create-react-app
+3. create-react-app appname
+4. cd appname
+5. npm start
+6. It will start the development server
+
