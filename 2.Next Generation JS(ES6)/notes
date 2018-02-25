@@ -161,4 +161,89 @@
       person.printName();
       person.printGender();
 
-  
+
+
+  5. Spread & Rest operators
+
+  symbol : ...(three dots)
+
+  spread : used to split up array elements or object propeties.
+
+    example :  let oldArray = [1,2,3];
+
+                let newArray = [...oldArray,4,25 //o/p :[1.2,3,4,5]
+
+                let oldObject  = {
+                         a:1,
+                         b:2            
+                }
+
+                let newObject = {...newObject,c:3} // o/p:{a:1,b:2,c:3}
+
+
+   rest : used to merge list of function arguments into an array.
+
+     ex:     function sortArgs(...args) {
+                   return args.sort();
+             }   
+
+             function sortArgs(...args){
+                return args.sort();
+                }
+
+           console.log(sortArgs(1,3,4,2));   
+
+
+
+
+6. Destructring
+
+     It is used to extract elements from arrays and properties from objects and store them into varibales.
+
+
+     Array Destructring      
+
+     [a,b] = ["Raj","Max"]
+
+     console.log(a); //Raj
+     console.log(b); //Max
+
+     Object Destructring 
+      
+      
+      {name}={
+          name:"Raj",
+          age:27
+      } 
+
+         console.log(name); //Raj
+         console.log(age); //Undefined
+
+         //here name is the key of pointing object
+
+
+
+ 7. Reference and Primitive types refresher
+
+ var a = 1;
+ var b = a;
+ console.log(b); //1
+
+ a = 2;
+ console.log(a); //2 
+ console.log(b); //1
+
+object and arrays are reference type means both pointing same address location.
+
+one object is changed and all other assigning object values will be changed.
+
+const person = {
+    name:"Raj"
+}
+const newPerson = person; 
+person.name ="Max";
+console.log(newPerson); //{name:"Max"} eventhough we changde the person property , it reflected newPerson object
+
+      
+
+8. Refreshing Array fuctions.  
